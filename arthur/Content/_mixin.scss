@@ -1,0 +1,16 @@
+@mixin animateFadeInUp(){
+     -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+@mixin animateBounceInDown(){
+        -webkit-animation-name:bounceInDown;
+    animation-name:bounceInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+@mixin animationDuration(){
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}

@@ -1,0 +1,116 @@
+@import '_mixin.scss';
+@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+$fontSize14:14px;
+body{
+    font-family:fontawesome-webfont;
+}
+.modal-dialog{
+    height:400px;
+}
+ng-include.mainDownSide.ng-enter,
+[ng-include].mainDownSide.ng-enter {
+     -webkit-animation-name:zoomIn;
+    animation-name:zoomIn;
+    @include animationDuration;
+}
+h5{
+    font-size:16px;
+}
+.row{
+    margin:0px;
+}
+.workingExperience>h4:hover{
+    color:white;
+}
+
+.smallImage{
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px #999;
+    cursor:pointer;
+    width:105px;
+    height:70px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.smallImage:hover{
+    box-shadow: 1px 1px 9px black;
+}
+.smallImageFont{
+    font-size:$fontSize14;
+    text-align:center;
+    color:black;
+}
+@media(max-width: 768px) {
+    .smallImage {
+        width: 700px;
+        height: auto;
+    }
+
+    .smallImageFont {
+        font-size: 26px;
+    }
+    .workingExperience>h3,
+    .philosophy>h3 {
+        font-size:16px;
+    }
+    .workingExperience>h4,
+    .philosophy>h4 {
+        font-size:12px;
+    }
+}
+blockquote {
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(240, 247, 253);
+    border-bottom-color: rgb(208, 227, 240);
+    border-left-color: rgb(208, 227, 240);
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-right-color: rgb(208, 227, 240);
+    border-top-color: rgb(208, 227, 240);
+    font-size:$fontSize14;
+}
+.textDisplay{
+    width: 100%; 
+    border-radius: 5px; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.498039);
+    padding-top:20px;
+}
+.textDisplay:hover {
+    background-color: rgba(0, 0, 0, 0.698039)
+}
+.Header01.ng-enter {
+    -webkit-animation-name:bounceInDown;
+    animation-name:bounceInDown;
+    @include animationDuration;
+}
+.Video01.ng-enter {
+    -webkit-animation-name:bounceInUp;
+    animation-name:bounceInUp;
+    @include animationDuration;
+}
+/* slide 2*/
+.imgfriendLeft.ng-enter {
+    @include animateFadeInUp;
+}
+
+.imgfriendMiddle.ng-enter {
+    -webkit-animation-name:fadeInDown;
+    animation-name:fadeInDown;
+    @include animationDuration;
+}
+.imgfriendRight.ng-enter {
+   @include animateFadeInUp;
+}
+
+/* slide 3*/
+.workingExperience.ng-enter {
+    @include animateBounceInDown;
+}
+/* slide 4*/
+.philosophy.ng-enter {
+    @include animateBounceInDown;
+}

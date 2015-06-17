@@ -1,0 +1,78 @@
+﻿<html ng-app="main">
+<head>
+    <link href="/images/arthurIcon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur CV</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/animate.css" rel="stylesheet" />
+    <link href="Content/customer.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="/app/main.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+</head>
+<body ng-controller="CarouselDemoCtrl">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="/">Arthur's CV</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                     <p style="color: #f7f20b;margin-top:15px;"><img src="/Images/email.png" style="border-width: 0px;margin-right: 5px;">Email:arthur.lv6@gmail.com <img src="/Images/phone.png" style="border-width: 0px;margin-right: 5px;">Phone:021-057-8463</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin-top:50px;">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active" style="background-image: url('{{slide.image}}'); height:450px; ">
+                <div ng-include="'/app/_header.html'"  ng-animate-children></div>
+                <div ng-include="'/app/_friend.html'" ng-animate-children></div>
+                <div ng-include="'/app/_experience.html'" ng-animate-children></div>
+                <div ng-include="'/app/_philosophy.html'" ng-animate-children></div>
+            </slide>
+        </carousel>
+    </div>
+    <div ng-include="'/app/_mainVideoShow.html'" class="mainDownSide"></div>
+    <div ng-include="'/app/_mainDownSide.html'" class="mainDownSide"></div>
+    <div>
+        <script type="text/ng-template" id="imageModal.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Certificate</h3>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="{{imageLink}}" />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
+        </script>
+        <script type="text/ng-template" id="videoModal.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Video show</h3>
+            </div>
+            <div class="modal-body">
+                    <iframe id="showVideo" ng-src={{videoLink}} type='application/x-shockwave-flash' allowscriptaccess='always' allowfullscreen='true' width='100%' height='100%'> </iframe>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" ng-click="cancel()">Close</button>
+            </div>
+        </script>
+        <script type="text/ng-template" id="textModal.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Detail</h3>
+            </div>
+            <div class="modal-body">
+                <div ng-bind-html="textContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" ng-click="cancel()">Close</button>
+            </div>
+        </script>
+    </div>
+</body>
+</html>

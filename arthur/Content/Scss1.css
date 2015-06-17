@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'fontawesome-webfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
+body {
+  font-family: fontawesome-webfont; }
+
+.modal-dialog {
+  height: 400px; }
+
+ng-include.mainDownSide.ng-enter,
+[ng-include].mainDownSide.ng-enter {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+blockquote {
+  padding: 10px 10px;
+  margin: 0 0 20px;
+  font-size: 14.5px;
+  border-left: 3px solid #eee; }
+
+h5 {
+  font-size: 16px; }
+
+.row {
+  margin: 0px; }
+
+.workingExperience > h4:hover {
+  color: white; }
+
+.smallImage {
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px #999;
+  /*margin:3px;*/
+  cursor: pointer;
+  width: 105px;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.smallImage:hover {
+  box-shadow: 1px 1px 9px black; }
+
+.smallImageFont {
+  font-size: 14px;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .smallImage {
+    width: 700px;
+    height: auto; }
+
+  .smallImageFont {
+    font-size: 26px; }
+
+  .workingExperience > h3,
+  .philosophy > h3 {
+    font-size: 16px; }
+
+  .workingExperience > h4,
+  .philosophy > h4 {
+    font-size: 12px; } }
+blockquote {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f0f7fd;
+  border-bottom-color: #d0e3f0;
+  border-left-color: #d0e3f0;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: #d0e3f0;
+  border-top-color: #d0e3f0; }
+
+.textDisplay {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.49804);
+  padding-top: 20px; }
+
+.textDisplay:hover {
+  background-color: rgba(0, 0, 0, 0.69804); }
+
+.Header01.ng-enter {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.Video01.ng-enter {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+/* slide 2*/
+.imgfriendLeft.ng-enter {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.imgfriendMiddle.ng-enter {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.imgfriendRight.ng-enter {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+/* slide 3*/
+.workingExperience.ng-enter {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+/* slide 4*/
+.philosophy.ng-enter {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+/*# sourceMappingURL=Scss1.css.map */
