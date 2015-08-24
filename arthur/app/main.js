@@ -46,7 +46,7 @@ angular.module('main').controller('CarouselDemoCtrl', function ($scope, $modal, 
                 $scope.bool3 = true;
             }
         });
-    $scope.items = ['item1', 'item2', 'item3'];
+    //$scope.items = ['item1', 'item2', 'item3'];
 
     $scope.animationsEnabled = true;
 

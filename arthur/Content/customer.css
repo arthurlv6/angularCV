@@ -93,7 +93,8 @@ blockquote {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s; }
+  animation-duration: 1s; 
+}
 
 .imgfriendMiddle.ng-enter {
   -webkit-animation-name: fadeInDown;

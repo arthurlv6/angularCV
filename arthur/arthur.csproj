@@ -85,9 +85,6 @@
     <Content Include="Images\bg03.jpg" />
     <Content Include="Images\bg04.jpg" />
     <Content Include="packages.config" />
-    <Content Include="Properties\PublishProfiles\arthurcv.pubxml.user" />
-    <Content Include="Properties\PublishProfiles\CVDeploy.pubxml.user" />
-    <Content Include="Properties\PublishProfiles\webDeploy.pubxml.user" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -102,9 +99,7 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\customer.scss" />
     <Content Include="Content\_mixin.scss" />
-    <None Include="Properties\PublishProfiles\arthurcv.pubxml" />
-    <None Include="Properties\PublishProfiles\CVDeploy.pubxml" />
-    <None Include="Properties\PublishProfiles\webDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\arthurcv.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -162,7 +157,9 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\npm.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
