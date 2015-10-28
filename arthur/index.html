@@ -29,7 +29,7 @@
     </div>
     <div style="margin-top:50px;">
         <carousel interval="myInterval">
-            <slide ng-repeat="slide in slides" active="slide.active" style="background-image: url('{{slide.image}}'); height:450px; ">
+            <slide ng-repeat="slide in slides" active="slide.active" style="background-image: url('{{slide.image}}'); height:450px; background-size: 100% 100%;background-repeat: no-repeat;">
                 <div ng-include="'/app/_header.html'"  ng-animate-children></div>
                 <div ng-include="'/app/_friend.html'" ng-animate-children></div>
                 <div ng-include="'/app/_experience.html'" ng-animate-children></div>
